@@ -4,7 +4,7 @@
     <el-header>
       <div>
         <img src="../assets/JunLog.jpg" alt="Logo" />
-        <span>电商后台管理系统</span>
+        <span>后台管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
     </el-header>
@@ -23,6 +23,8 @@
           :unique-opened="true"
           :collapse="isCollapse"
           :collapse-transition="false"
+          router
+          :default-active="activePath"
         >
           <el-submenu :index="item.id + ''" v-for="item in menulist" :key="item.id">
             <template slot="title">
@@ -33,9 +35,10 @@
 
             <!-- 二级菜单 -->
             <el-menu-item
-              :index="subItem.id + ''"
+              :index="subItem.path"
               v-for="subItem in item.children"
               :key="subItem.id"
+              @click="saveNavState(subItem.path)"
             >
               <template slot="title">
                 <i class="el-icon-menu"></i>
@@ -67,11 +70,14 @@ export default {
         '145': 'el-icon-data-analysis'
       },
       //是否折叠
-      isCollapse: false
+      isCollapse: false,
+      //激活的链接地址
+      activePath: ''
     }
   },
   created() {
     this.getMenuList()
+    this.activePath = window.sessionStorage.getItem('activePath')
   },
   methods: {
     logout() {
@@ -88,6 +94,11 @@ export default {
     //点击按钮，切换菜单展开与折叠
     toggleCollapse() {
       this.isCollapse = !this.isCollapse
+    },
+    //保存链接的激活状态
+    saveNavState(activePath) {
+      window.sessionStorage.setItem('activePath', activePath)
+      this.activePath = activePath
     }
   }
 }
