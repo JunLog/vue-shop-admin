@@ -1,11 +1,17 @@
 <template>
   <div>
-    <h2>角色列表</h2>
+    <h2>商品分类</h2>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {}
+  },
+  created() {},
+  methods: {}
+}
 </script>
 
 <style lang="less" scoped>
