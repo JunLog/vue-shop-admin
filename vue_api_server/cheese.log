@@ -101,3 +101,11 @@
 [2020-06-05T11:33:29.078] [DEBUG] cheese - null
 [2020-06-05T11:34:05.820] [DEBUG] cheese - null
 [2020-06-05T11:34:12.842] [DEBUG] cheese - null
+[2020-06-06T14:29:13.324] [DEBUG] cheese - login => username:admin,password:123456
+[2020-06-06T14:29:13.325] [DEBUG] cheese - admin
+[2020-06-06T14:29:13.348] [DEBUG] cheese - null
+[2020-06-06T14:29:13.349] [DEBUG] cheese - null
+[2020-06-08T09:17:09.011] [DEBUG] cheese - login => username:admin,password:123456
+[2020-06-08T09:17:09.012] [DEBUG] cheese - admin
+[2020-06-08T09:17:09.041] [DEBUG] cheese - null
+[2020-06-08T09:17:09.042] [DEBUG] cheese - null
