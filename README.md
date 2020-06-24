@@ -7,6 +7,7 @@ Vue 实战项目：电商管理系统（Element-UI）
 
 #### 启动后端接口
 
+0. 启动数据库 `sudo service mysql start`
 1. 先将根目录下的 `mysql.sql` 导入数据库
 2. 将路径切换到 `vue_api_server` 文件夹路径
 3. 运行 `npm install` 安装依赖
