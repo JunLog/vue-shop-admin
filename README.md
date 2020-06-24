@@ -1,6 +1,30 @@
 # vue-shop-admin
 
 Vue 实战项目：电商管理系统（Element-UI）
+[项目视频](https://www.bilibili.com/video/BV1EE411B7SU "哔哩哔哩视频")
+
+## 运行项目
+
+#### 启动后端接口
+
+1. 先将根目录下的 `mysql.sql` 导入数据库
+2. 将路径切换到 `vue_api_server` 文件夹路径
+3. 运行 `npm install` 安装依赖
+4. 修改 `vue_api_server/congfig/default.json` 的数据库信息
+5. 运行 `node app.js` 启动项目
+
+#### 启动前端项目
+
+1. 将路径切换到 `vue_shop` 文件夹
+2. 运行 `vue ui` 启动可视化项目管理
+3. 点击左菜单栏 _“任务”_
+4. 选择 _“serve”_
+5. 点击 _“运行”_
+6. 待编译成功后，即可点击 _“启动 app”_
+
+---
+
+---
 
 ### 优化策略
 
