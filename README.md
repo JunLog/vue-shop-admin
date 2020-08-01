@@ -27,6 +27,24 @@ Vue 实战项目：电商管理系统（Element-UI）
 
 ---
 
+## 依赖警告
+
+项目上传到 `Github` 后，隔一段时间就提示依赖警告，需要将依赖版本更新
+前言
+经常会遇到 package.json 中的库有更新，但是太多一个一个的来很费事，幸好有个工具 npm-check-updates 可以帮助我们检查版本是否有变化
+
+安装
+
+```bash
+npm install -g npm-check-updates
+```
+
+`npm-check-updates -u`仅修改 package.json 文件。
+
+运行`npm install` 以更新已安装的软件包和 package-lock.json
+
+---
+
 ### 优化策略
 
 - 生成打包报告
